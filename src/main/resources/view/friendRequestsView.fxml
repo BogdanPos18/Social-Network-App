@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6.Controller.FriendRequestsController">
+   <children>
+      <SplitPane dividerPositions="0.7807486631016042" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tableViewRequests" prefHeight="400.0" prefWidth="464.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnFrom" prefWidth="150.3999908566475" text="From" />
+                      <TableColumn fx:id="tableColumnDate" prefWidth="156.8000030517578" text="Date" />
+                        <TableColumn fx:id="tableColumnStatus" prefWidth="157.5999755859375" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="confirmButton" layoutX="39.0" layoutY="129.0" mnemonicParsing="false" onAction="#confirmButtonClicked" text="Confirm">
+                     <font>
+                        <Font name="Wingdings 2" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+                  <Button fx:id="removeButton" layoutX="38.0" layoutY="224.0" mnemonicParsing="false" onAction="#removeRequestButtonClicked" text="Remove" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6.Controller.UserController">
+   <children>
+      <SplitPane dividerPositions="0.5646907216494844" layoutX="-107.0" layoutY="-85.0" prefHeight="537.0" prefWidth="777.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="372.0" prefWidth="244.0">
+               <children>
+                  <TableView fx:id="tableViewUsers" layoutX="106.0" layoutY="83.0" prefHeight="454.0" prefWidth="335.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnName" prefWidth="162.40003204345703" text="Name" />
+                      <TableColumn fx:id="tableColumnAge" prefWidth="172.79998779296875" text="Age" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="317.0">
+               <children>
+                  <Button fx:id="removeFriendButton" layoutX="122.0" layoutY="255.0" mnemonicParsing="false" onAction="#removeFriendButtonClicked" prefHeight="26.0" prefWidth="110.0" text="Remove friend">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="allFriendsButton" layoutX="123.0" layoutY="315.0" mnemonicParsing="false" onAction="#allFriendsButtonClicked" prefHeight="26.0" prefWidth="110.0" text="All friends">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="friendRequestsButton" layoutX="123.0" layoutY="371.0" mnemonicParsing="false" onAction="#friendRequestsButtonClicked" prefHeight="26.0" prefWidth="109.0" text="Friend requests">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sendRequestButton" layoutX="123.0" layoutY="197.0" mnemonicParsing="false" onAction="#sendRequestButtonClicked" prefHeight="26.0" prefWidth="110.0" text="Send request">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

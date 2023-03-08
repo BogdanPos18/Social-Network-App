@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6.Controller.FriendRequestsController">
+   <children>
+      <TableView prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="299.20001220703125" text="To" />
+          <TableColumn prefWidth="300.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

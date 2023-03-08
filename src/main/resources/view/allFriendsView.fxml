@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6.Controller.AllFriendsController">
+   <children>
+      <TableView fx:id="tableViewFriends" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tableColumnFriendName" prefWidth="299.2000732421875" text="Name" />
+          <TableColumn fx:id="tableColumnFriendAge" minWidth="0.0" prefWidth="299.99993896484375" text="Age" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
